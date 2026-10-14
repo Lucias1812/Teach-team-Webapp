@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2016",
+    "lib": ["es2020", "dom"],
+
+    /* Modules */
+    "module": "commonjs",
+    "rootDir": "src",
+    "outDir": "dist",
+
+    /* Decorators (required for TypeORM) */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    /* JSON imports & interop */
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+
+    /* Type resolution (includes session.d.ts) */
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+
+    /* Strictness */
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/types/**/*.d.ts"
+  ]
+}
